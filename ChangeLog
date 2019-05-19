@@ -1,0 +1,21 @@
+xmltoman (0.4) gutsy; urgency=low
+
+  * Generated HTML entities to &<>".
+  * Show error message when no file is passed.
+
+ -- Jose Carlos N Medeiros <debian@psabs.com.br>  Sat, 22 Mar 2008 19:31:15 -0300
+
+xmltoman (0.3) unstable; urgency=low 
+
+  * new release:
+    - man pages look much better now
+    - includes xsl, dtd and css files (Thanks, Lennart!)
+
+ -- Oliver Kurth <oku@debian.org>  Fri, 03 Oct 2003 15:34:04 +0200
+
+xmltoman (0.2) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Oliver Kurth <oku@debian.org>  Tue,  8 Oct 2002 22:37:00 +0200
+

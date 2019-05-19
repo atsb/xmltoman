@@ -1,0 +1,50 @@
+<?xml version="1.0" standalone='no'?>
+<!DOCTYPE manpage SYSTEM "https://gitlab.com/atsb/xmltoman/raw/master/xmltoman.dtd">
+<?xml-stylesheet type="text/xsl" href="https://gitlab.com/atsb/xmltoman/raw/master/xmltoman.xsl" ?>
+
+<manpage name="xmltoman" section="1" desc="xml to man converter">
+
+<synopsis>
+<cmd>xmltoman <arg>file.1.xml</arg> > file.1</cmd>
+</synopsis>
+
+<description>
+
+<p>xmltoman is a small script to convert XML to a MAN page in GROFF
+format. It features the usual man page items such a description,
+options, see also etc. The XML format also supports converting to HTML
+pages.</p>
+
+<p>You will find the DTD in <file>/usr/share/xmltoman/</file> on a
+Debian GNU/Linux system. There is also an XSL file to generate html using
+<manref name="xsltproc" section="1"/>.</p>
+
+</description>
+
+<section name ="Files">
+<p><file>/usr/share/xmltoman/xmltoman.dtd</file> the DTD file.</p>
+<p><file>/usr/share/xmltoman/xmltoman.xsl</file> XSLT stylesheet to generate HTML.</p>
+<p><file>/usr/share/xmltoman/xmltoman.css</file> stylesheet to be used for HTML.</p>
+</section>
+
+<section name = "Author">
+<p>xmltoman was written by Oliver Kurth
+&lt;oku@masqmail.cx&gt;</p>
+</section>
+
+<section name = "Maintainer">
+<p>xmltoman is currently maintained by Adam Bilbrough</p>
+</section>
+
+<section name = "See also">
+<p><manref name="xmlmantohtml" section="1"/></p>
+</section>
+
+<section name = "Comments">
+
+<p>This man page was written using <manref name="xmltoman" section="1"
+href="https://gitlab.com/atsb/xmltoman/blob/master/xmltoman"/>
+by the same author and / or maintainer.</p>
+
+</section>
+</manpage>

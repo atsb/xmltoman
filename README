@@ -1,0 +1,33 @@
+xmltoman and xmlmantohtml are two very simple scripts for converting xml
+to groff or html.
+
+To test the examples:
+xmltoman xml/masqmail.8.xml > masqmail.8
+Look at the result with
+man -l masqmail.8
+
+installation:
+make
+make install
+
+By default, the scripts will be installed to /usr/local. Override
+this with setting PREFIX, eg.:
+
+make PREFIX=/usr
+make install PREFIX=/usr
+
+An alternative to use xmlmantohtml is to pass the XML source through
+an XSLT interpreter such das "xsltproc" (available as Debian package
+under this name). A XSL template for HTML may be found in
+/usr/share/xmltoman/xmltoman.xsl.
+
+If this proves to be a usefule alternative, xmlmantohtml will
+be dprecated.
+
+Many thanks to Lennart Poettering, who provided the stylesheets
+and the dtd.
+
+Oliver Kurth <oku@masqmail.cx>
+Tue, 08 Oct 2002 22:32:46 +0200
+and
+Fri, 03 Oct 2003 14:55:42 +0200
