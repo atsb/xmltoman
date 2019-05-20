@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone='no'?>
-<!DOCTYPE manpage SYSTEM "https://raw.githubusercontent.com/atsb/xmltoman/master/xmltoman.dtd">
-<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/atsb/xmltoman/master/xmltoman.xsl" ?>
+<!DOCTYPE manpage SYSTEM "https://gitlab.com/atsb/xmltoman/raw/master/xmltoman.dtd">
+<?xml-stylesheet type="text/xsl" href="https://gitlab.com/atsb/xmltoman/raw/master/xmltoman.xsl" ?>
 
 <manpage name="xmltoman" section="1" desc="xml to man converter">
 
@@ -43,7 +43,7 @@ Debian GNU/Linux system. There is also an XSL file to generate html using
 <section name = "Comments">
 
 <p>This man page was written using <manref name="xmltoman" section="1"
-href="https://github.com/atsb/xmltoman"/>
+href="https://gitlab.com/atsb/xmltoman/blob/master/xmltoman"/>
 by the same author and / or maintainer.</p>
 
 </section>
