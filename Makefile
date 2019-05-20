@@ -6,20 +6,22 @@ DISTFILES= COPYING Makefile README xml/ xmlmantohtml xmltoman xmltoman.css xmlto
 
 all: install
 
-#xmltoman.1: xml/xmltoman.1.xml
-#	./xmltoman $< > $@
+xmltoman.1: xml/xmltoman.1.xml
+	chmod 0744 xmltoman
+	./xmltoman $< > $@
 
-#xmlmantohtml.1: xml/xmlmantohtml.1.xml
-#	./xmltoman $< > $@
+xmlmantohtml.1: xml/xmlmantohtml.1.xml
+	chmod 0744 xmlmantohtml
+	./xmltoman $< > $@
 
 install:
-	install -D xmltoman $(DESTDIR)$(prefix)/bin/xmltoman
-	install -D xmlmantohtml $(DESTDIR)$(prefix)/bin/xmlmantohtml
+	install -D -m 0744 xmltoman $(DESTDIR)$(prefix)/bin/xmltoman
+	install -D -m 0744 xmlmantohtml $(DESTDIR)$(prefix)/bin/xmlmantohtml
 	install -D -m 0644 xmltoman.dtd $(DESTDIR)$(prefix)/share/xmltoman/xmltoman.dtd
 	install -D -m 0644 xmltoman.css $(DESTDIR)$(prefix)/share/xmltoman/xmltoman.css
 	install -D -m 0644 xmltoman.xsl $(DESTDIR)$(prefix)/share/xmltoman/xmltoman.xsl
-	install -D -m 0644 xmltoman.1.gz $(DESTDIR)$(prefix)/share/man/man1/xmltoman.1.gz
-	install -D -m 0644 xmlmantohtml.1.gz $(DESTDIR)$(prefix)/share/man/man1/xmlmantohtml.1.gz
+	install -D -m 0644 xmltoman.1 $(DESTDIR)$(prefix)/share/man/man1/xmltoman.1
+	install -D -m 0644 xmlmantohtml.1 $(DESTDIR)$(prefix)/share/man/man1/xmlmantohtml.1
 
 dist:
 	[ -d $(DISTNAME) ] && rm -rf $(DISTNAME) || true
